@@ -7,4 +7,10 @@ class Manusia extends CI_Controller {
 	{
 		$this->load->view('manusia');
 	}
+
+	public function makan()
+	{
+		$data['makanan']="Daftar Makanan";
+		$this->load->view('daftarmakanan', $data);
+	}
 }
