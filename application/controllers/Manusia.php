@@ -19,4 +19,10 @@ class Manusia extends CI_Controller {
 		$data['minuman'] = array('air putis','teh','kopi','susu' ); //parsing data array
 		$this->load->view('daftarminuman', $data);
 	}
+
+	public function belajar(){
+		$judul['title'] = ('Sedang Belajar');
+		$data['belajar']= array('Matematika', 'fisika','biologi','ips', 'ipa', 'pai');
+		$this->load->view('belajar/belajar', $data, $judul);
+	}
 }
