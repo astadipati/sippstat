@@ -10,7 +10,7 @@ class Barang extends CI_Controller{
 	function elektronik(){
 		$data['title'] = "Daftar Barang Elektronik";
 		$this->load->model('model_barang');
-		$data['list_barang'] = $this->model_barang->tampilkan_data()->result();
+		$data['list_barang'] = $this->model_barang->tampilkan_data();
 		$this->load->view('barang/daftarbarang',$data);
 	}
 }
